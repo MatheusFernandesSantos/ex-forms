@@ -1,0 +1,49 @@
+* {
+    background-color: #fff;
+    
+}
+
+button[type="submit"] {
+    background-color: #34cc8b;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 4px 4px 2px #999;
+    transition: all.3s;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: #29ad29;
+    transition: all.3s;
+}
+
+button[type="reset"] {
+    background-color: #ff5555;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 4px 4px 2px #999;
+    transition: all.3s;
+}
+
+button[type="reset"]:hover,
+button[type="reset"]:focus {
+    background-color: #ff0000;
+    transition: all.3s;
+}
+
+button[type="reset"]:active {
+    box-shadow: inset 1px 1px 2px #444;
+}
+
+button:disabled,
+button:disabled:hover {
+    box-shadow: none;
+    background-color: #ccc;
+    cursor: not-allowed;
+}
