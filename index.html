@@ -15,6 +15,58 @@
 
     <form action="">
 
+
+        <div class="controle-form">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="100" step="10">
+        </div>
+
+        <fieldset>
+            <legend>
+                <label for=""></label>
+                <select id="pais">
+                    <option value="0">Afeganistão</option>
+                    <option value="1">Argentina</option>
+                    <option value="2">Brasil</option>
+                    <option value="3">Canadá</option>
+                </select>
+            </legend>
+        </fieldset>
+
+        <fieldset>
+            <div class="controle-form">
+                <input list="estados-lista" value="São Paulo">
+
+                <datalist id="estados-lista">
+                    <option value="ap">Amapá</option>
+                    <option value="ce">Ceará</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="to">Tocantins</option>
+                </datalist>
+            </div>
+
+            <div class="controle-form">
+                <label for="selectUF">UF:</label>
+                <input list="uf" value="SP" id="selectUF">
+            </div>
+        </fieldset>
+
+        <div id="controle-form">
+
+            <fieldset>
+                <legend>Escolha seu Turno:</legend>
+
+                <input type="radio" name="turno" id="manha">
+                <label for="manha">Manhã</label>
+
+                <input type="radio" name="turno" id="tarde">
+                <label for="tarde">Tarde</label>
+
+                <input type="radio" name="turno" id="Noite">
+                <label for="Noite">Noite</label>
+            </fieldset>
+        </div>
+
         <div class="controle-form">
             <label for="codigo">Codigo:</label>
             <input type="number" id="codigo" value="123456" disabled>
@@ -22,70 +74,73 @@
 
         <div class="controle-form">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" required autocomplete="name" autofocus
-            placeholder="Nome">
+            <input type="text" id="nome" required autocomplete="name" autofocus placeholder="Nome">
         </div>
 
         <div class="controle-form">
             <label for="cpf">CPF:</label>
             <input type="cpf" id="cpf" maxlength="11" readonly>
         </div>
-        
+
         <div class="controle-form">
             <label for="email">E-mail:</label>
-            <input type="email" id="email" requerid autocomplete="email" autofocus
-            placeholder="exemplo@email.com">
+            <input type="email" id="email" requerid autocomplete="email" autofocus placeholder="exemplo@email.com">
         </div>
-        
+
         <div class="controle-form">
             <label for="idade">Idade:</label>
             <input type="number" min="0" max="120" placeholder="ex: 18">
         </div>
-        
+
         <div class="controle-form">
             <label for="altura">Altura:</label>
             <input type="number" min="0" max="2.50" step="0.01" placeholder="ex: 1,70">
         </div>
-        
+
         <div class="controle-form">
             <label for="peso">Peso:</label>
             <input type="number" min="0" max="595" step="0.05" placeholder="ex: 60">
         </div>
-        
+
         <div class="controle-form">
             <label for="dataNascimento">Data de Nascimento:</label>
-            <input type="date" id="dataNascimento" >
+            <input type="date" id="dataNascimento">
         </div>
-       
+
         <div class="controle-form">
             <label for="dataCadastro">Data de Cadastro:</label>
-            <input type="date" id="dataCadastro" >
+            <input type="date" id="dataCadastro">
         </div>
-        
+
         <div class="controle-form">
             <label for="horaCadastro">Hora de Cadastro:</label>
-            <input type="time" id="horaCadastro" >
+            <input type="time" id="horaCadastro">
         </div>
-       
+
+        <div class="controle-form">
+            <label for="dataHoraCadastro">Data e Hora de Cadastro:</label>
+            <input type="time" id="dataHoraCadastro">
+        </div>
+
         <div class="controle-form">
             <label for="novaSenha">Nova senha:</label>
-            <input type="password" id="novaSenha" >
+            <input type="password" id="novaSenha">
         </div>
-        
+
         <div class="controle-form">
             <label for="arquivo">Arquivo:</label>
             <input type="file" id="arquivo">
         </div>
-        
+
         <div class="controle-form">
             <label for="corPreferida">Cor Preferida:</label>
-            <input type="color" id="corPreferida" >
+            <input type="color" id="corPreferida">
         </div>
 
 
         <input type="hidden" id="chaveSecreta" value="5grfg743tr87934f9749734">
 
-        <button type="submit" >Enviar</button>
+        <button type="submit">Enviar</button>
         <button type="reset">Limpar</button>
         <button type="reset" disabled>Desabilitado</button>
 
